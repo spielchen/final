@@ -347,6 +347,9 @@ header {
   position: relative;
   margin-bottom: 2rem;
 }
+.solutions-item_hide {
+  display: none;
+}
 .solutions-item_hover {
   display: none;
   position: absolute;
@@ -401,14 +404,16 @@ header {
   color: #aeaeb1;
   font-size: 1.2rem;
 }
-.solutions-item a {
+.solutions-item_button,
+.solutions-item_button_hide {
   opacity: .8;
   color: #fe5c2e;
   font-family: 'Museo Sans Cyrl 100';
   font-weight: 100;
   font-size: 1.2rem;
 }
-.solutions-item a i {
+.solutions-item_button i,
+.solutions-item_button_hide i {
   display: inline-block;
   margin-right: 2rem;
 }
@@ -418,10 +423,12 @@ header {
 .solutions-item:hover .solutions-item_hover {
   display: inline-block;
 }
-.solutions-item:hover a {
+.solutions-item:hover .solutions-item_button,
+.solutions-item:hover .solutions-item_button_hide {
   opacity: 1;
   font-family: 'Museo Sans Cyrl 300';
   font-weight: 300;
+  cursor: pointer;
 }
 .systems-header {
   text-align: center;
@@ -441,8 +448,6 @@ header {
 }
 .systems-categorie {
   margin-bottom: 5rem;
-}
-.systems-categorie ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -452,11 +457,13 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.systems-categorie ul li {
-  display: inline;
+.systems-categorie_item {
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
   margin-right: 1.5rem;
 }
-.systems-categorie ul li a {
+.systems-categorie_item span {
   text-transform: uppercase;
   font-size: 1.4rem;
   font-family: 'Museo Sans Cyrl 700';
@@ -466,14 +473,15 @@ header {
   border-radius: 5px;
   color: #393945;
 }
-.systems-categorie ul li a:hover {
+.systems-categorie_item span:hover {
   background-color: #fe5c2e;
   color: #fff;
   text-decoration: none;
   border: 1px solid #fe5c2e;
   border-radius: 5px;
+  cursor: pointer;
 }
-.systems-categorie ul li a:focus {
+.systems-categorie_item span:focus {
   background-color: #393945;
   color: #fff;
   text-decoration: none;
@@ -481,6 +489,7 @@ header {
   border-radius: 5px;
 }
 .systems-item {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -508,24 +517,30 @@ header {
 .systems-item_icon:hover .systems-item_icon-hover {
   display: inline-block;
 }
-.erp_header {
+.sys {
+  display: none;
+}
+.sys h3 {
   text-align: center;
 }
-.erp_header h2 {
+.sys_header {
+  text-align: center;
+}
+.sys_header h2 {
   font-size: 1.8rem;
   font-family: 'Museo Sans Cyrl 700';
   font-weight: normal;
   margin-bottom: 3rem;
 }
-.erp_header p {
+.sys_header p {
   font-size: 1.4rem;
   font-family: 'Museo Sans Cyrl 700';
   font-weight: normal;
 }
-.erp-plus ul {
+.sys-plus ul {
   vertical-align: middle;
 }
-.erp-plus ul li {
+.sys-plus ul li {
   font-size: 1.4rem;
   font-family: 'Museo Sans Cyrl 100';
   font-weight: 100;
@@ -534,15 +549,15 @@ header {
   padding-left: 3rem;
   line-height: 3rem;
 }
-.erp-plus ul li:hover {
+.sys-plus ul li:hover {
   background: url('../img/marker-hover.svg') no-repeat;
 }
-.erp-profit_header {
+.sys-profit_header {
   font-size: 2rem;
   font-family: 'Museo Sans Cyrl 700';
   font-weight: normal;
 }
-.erp-profit_item {
+.sys-profit_item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -554,7 +569,7 @@ header {
   position: relative;
   margin-bottom: 2rem;
 }
-.erp-profit_item span {
+.sys-profit_item span {
   position: absolute;
   height: 2rem;
   width: 2rem;
@@ -565,33 +580,33 @@ header {
   color: #fff;
   margin-right: 2rem;
 }
-.erp-profit_item p {
+.sys-profit_item p {
   padding-left: 3rem;
   margin-top: 0;
   display: inline-block;
 }
-.erp-profit_item:hover span {
+.sys-profit_item:hover span {
   background-color: #fe5c2e;
 }
-.erp-systems {
+.sys-systems {
   margin-bottom: 5rem;
   height: auto;
 }
-.erp-systems_icon {
+.sys-systems_icon {
   display: inline-block;
   margin-right: 3rem;
 }
-.erp-systems_icon img {
+.sys-systems_icon img {
   width: 8rem;
   height: auto;
 }
-.erp-systems_icon:hover img {
+.sys-systems_icon:hover img {
   display: none;
 }
-.erp-systems_icon:hover .erp-systems_hover {
+.sys-systems_icon:hover .sys-systems_hover {
   display: inline-block;
 }
-.erp-systems_hover {
+.sys-systems_hover {
   display: none;
 }
 #sap img {
@@ -599,4 +614,283 @@ header {
 }
 #c1 img {
   height: 55px;
+}
+.tab-content {
+  display: none;
+}
+.tab-content-1 {
+  display: block;
+}
+.solution-item_hide {
+  display: none;
+}
+.solutions-item_button_hide {
+  display: none;
+}
+.whyweare {
+  text-align: center;
+}
+.blockwhy {
+  left: 50%;
+}
+.proposition {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #fe5c2e;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+.proposition h2 {
+  display: inline-block;
+  border-bottom: 1px solid #fe5c2e;
+}
+.phase-header {
+  text-align: center;
+}
+.phase-header h2 {
+  font-size: 4.4rem;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: normal;
+  color: #393945;
+}
+.phase-step {
+  text-align: center;
+  padding: 4rem 0rem;
+  margin-bottom: 0;
+}
+.phase-step_icon {
+  display: inline-block;
+  width: 9rem;
+  height: 9rem;
+  background-color: #fff;
+  border-radius: 50px;
+  line-height: 9rem;
+}
+.phase-step_icon img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.phase-step h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: normal;
+}
+.phase-step p {
+  font-size: 1.6rem;
+  font-family: 'Museo Sans Cyrl 100';
+  font-weight: 100;
+}
+.phase-step_hover {
+  display: none;
+  width: 9rem;
+  height: 9rem;
+  background-color: #fe5c2e;
+  border-radius: 50px;
+  line-height: 9rem;
+}
+.phase-step_hover img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.phase-step:hover {
+  background-color: #fff;
+}
+.phase-step:hover .phase-step_icon {
+  display: none;
+}
+.phase-step:hover .phase-step_hover {
+  display: inline-block;
+}
+.phase-step:focus {
+  background-color: #fff;
+}
+.phase-content {
+  padding: 3rem;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  margin-top: -2rem;
+  margin-bottom: 5rem;
+}
+.phase-content_block {
+  vertical-align: top;
+  display: inline-block;
+  padding-right: 1rem;
+  width: 24%;
+}
+.phase-content_block h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: normal;
+  opacity: 0.5;
+  z-index: 999;
+}
+.phase-content_block p {
+  margin-top: 0;
+  font-size: 1.4rem;
+  font-family: 'Museo Sans Cyrl 100';
+  font-weight: 100;
+}
+.phase-content_block:hover h2 {
+  opacity: 1;
+  z-index: 999;
+}
+.phase-content_block:hover .phase-content_hide {
+  display: inline-block;
+}
+.phase-content_hide {
+  display: none;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50px;
+  background-color: #fe5c2e;
+  top: 2rem;
+  margin-left: -1rem;
+}
+.tab_phase-content {
+  display: none;
+}
+.tab_phase-content1 {
+  display: block;
+}
+.trust-header {
+  text-align: center;
+}
+.trust-header h2 {
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: normal;
+  font-size: 4.4rem;
+}
+.trust-firm {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8rem;
+}
+.trust-firm_hover {
+  display: none;
+  width: 90%;
+}
+.trust-firm_img {
+  width: 90%;
+  display: block;
+}
+.trust-firm-logo:hover img {
+  display: none;
+}
+.trust-firm-logo:hover .trust-firm_hover {
+  display: block;
+}
+.more {
+  box-shadow: 0px 10px 50px 3px rgba(0, 0, 0, 0.05);
+  background-color: #f7f7f7;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.more-img {
+  position: absolute;
+  display: inline-block;
+  top: 4rem;
+  left: 4rem;
+}
+.more-header h2 {
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: normal;
+  font-size: 4.4rem;
+}
+.more-offer {
+  display: inline-block;
+}
+.more-offer p {
+  font-family: 'Museo Sans Cyrl 300';
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-decoration: underline;
+}
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+.footer p {
+  font-family: 'Museo Sans Cyrl 100';
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.footer a {
+  font-family: 'Museo Sans Cyrl 100';
+  font-weight: 100;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #393945;
+  margin-right: 2rem;
+}
+.footer a:hover {
+  text-decoration: none;
+}
+.footer span {
+  font-family: 'Museo Sans Cyrl 900';
+  font-weight: bold;
+  font-size: 2rem;
+}
+.scroll-menu {
+  padding: 3rem;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  top: 100vh;
+}
+.scroll-menu ul {
+  display: inline;
+}
+.scroll-menu ul li {
+  margin-left: 4rem;
+  display: inline;
+}
+.scroll-menu ul li a {
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+  font-size: 1.5rem;
+  font-family: 'Museo Sans Cyrl 300';
+  font-weight: 300;
+  color: #7b7b81;
+  text-decoration: none;
+  padding-bottom: 1rem;
+}
+.scroll-menu ul li a:hover {
+  text-decoration: none;
+  color: #393945;
+  border-bottom: 2px solid #fe5c2e;
+}
+.scroll-menu ul li a:focus {
+  color: #393945;
+}
+.scroll-menu_phone {
+  display: inline-block;
+  float: right;
+  margin-right: 3rem;
+}
+.scroll-menu_phone span {
+  font-family: 'Museo Sans Cyrl 900';
+  font-weight: bold;
+  font-size: 1.6rem;
 }
