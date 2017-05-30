@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="72px" height="14px" viewBox="0 0 72 14">
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+<feFlood flood-color="rgb(255,255,255)" flood-opacity="0.50" result="coFloodOut1"/>
+<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+</filter>
+<image x="0" y="0" width="72" height="14" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAAOCAQAAAAm5ZK9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAANrSURBVDjLtdRraNZlHMbxz3PayT076J4dymmizhyTkFkDo9ROKGlW1gstMt9kYRRGLwoSIbEgkczCQ3RSIyHMqCy0TDtYlsbS8kiL5VZzZHMHNzefbc+/Fz7SEoOCdr244f5xc/O979/1u0KVEHWDifr1u5QCgQBhgaSp6iyRMkiKIstE42x1+iKMv9aIbIW6tLpKqR3p6iABZZpivI0X4VxQTIahEkq0+1WVGq9qGDwcomYos07PRRgRETnylSoWaFer0wxjrdM6mDjngVbpS+8ioqIyJOSJCBuq1yG/SMo3X8yzwsL/4J8waa/9G4WEuNRNUatMl3BQr1y54obIdkaWCv22axag3L2abDDJBC32OynHeBlCIo45pUylIVI61eowSqkQCDSrl6dCBgIpdVrElKsQk9Jmr0CVXsdQqEJjqJICd8pWLymlxTkxQ2TYIDDXtxjnRTus9KRFwqK+d79828QlRTzoJ2tV6pEn4lZfWO0+nQJh2TZbZJq3hPXIELPQu+6yTIFzinQY45zPNJuD6d60PIw2r+kyWq0GOUaIOuiAfqMsk6faO262z2TP+EaNpW7xgLARfrTCSk3ecLWnzbROrkwUyfOCFTYplECWUns8Z5thYkZ6RaZHzLJdiTCKlSmWUGSYeDTduk2eMluTE/aCbP3aTbHEbCP1iJqKPotFpFTZosv7VmOyayz1EsaiD0kNVqDYw5Lol7TZFjXmO2u6uNvtwmG3CdCiwhq9RqHnAtA0P/vUyQEWjXlbhcd1e9k8USGMkRD2gY+EhBSAYjSD8jQQMQXalAgLEJchggQCw9CKqCv06U2fv0xKoeB8MJJjtI26B5i9T1yjD42xyR4Pidmrx8fWSMrxmyqZwqBRt1l2KrIAl4sIy0hPW0xIrmvTyCFRMccF7tGm2hwp5Rrk+s5NAnfYKnYeaIIOOXIHzF7EWTnec8JBM50WscNGi83QpMginc6kX3fA6xbYKVO/dk/YrV0XSGl12o0edcRR9PtDxCe+8piZivyuyHILdeoWoNspvaFKMq13pZYB/5Nlp0PqHAXDVduvSchs14k7aa0zpqpzHGSaq9ox282S8LwSw+3SK26aelHX2+0HlKpRq1GxeUb73BF367DeJH2+Rpkah0OVVNgn/2/pVG++L/9rxv4/+hMfwRfQPDtZjQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wNS0yNlQxMzoxMzo0MCswMDowMCix8pcAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDUtMjZUMTM6MTM6NDArMDA6MDBZ7EorAAAAAElFTkSuQmCC" /></svg>
